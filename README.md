@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 # Portfolio
 
 ## 🧞 Commands
@@ -12,10 +11,8 @@ All commands are run from the root of the project, from a terminal:
 | `npm run build`        | Build your production site to `./dist/`          |
 | `npm run preview`      | Preview your build locally, before deploying     |
 
-<<<<<<< HEAD
 ## 👀 Want to learn more? Contact me ;)
 
 ## online portofio =>
 
 https://jeromemagnierdev.000webhostapp.com/
-
