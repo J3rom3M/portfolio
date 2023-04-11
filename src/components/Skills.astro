@@ -1,0 +1,62 @@
+---
+import Icon from './Icon.astro';
+---
+
+<section class="box skills">
+	<div class="stack gap-2 lg:gap-4">
+		<Icon icon="terminal-window" color="var(--accent-regular)" size="2.5rem" gradient />
+		<h2>Web Full Stack</h2>
+		<p>Programmation d'API Rest ou de projets complet avec PHP et JS. Réalisation de sites vitrines. Projets E-commerce. Développeur Fullstack sur une application cloud de comptabilité et gestion commerciale équipant des agences de grandes asssurances.</p>
+	</div>
+	<div class="stack gap-2 lg:gap-4">
+		<Icon icon="terminal-window" color="var(--accent-regular)" size="2.5rem" gradient />
+		<h2>Desktop Full Stack</h2>
+		<p>Programmation .NET C# ou Java d'outils consoles ou d'applications Winform avec fichiers de config. Réalisation d'automate de tests ou de gestion de sauvegardes multiples. lecteurs de logs.</p>
+	</div>
+	<div class="stack gap-2 lg:gap-4">
+		<Icon icon="strategy" color="var(--accent-regular)" size="2.5rem" gradient />
+		<h2>QA & automation</h2>
+		<p>Rédaction de scénarios de tests, déroulé de campagne de tests, gestion de la non régression. Mise en place et accompagnement sur un outil d'automatisation Ranorex via du C#.</p>
+	</div>
+</section>
+
+<style>
+	.box {
+		border: 1px solid var(--gray-800);
+		border-radius: 0.75rem;
+		padding: 1.5rem;
+		background-color: var(--gray-999_40);
+		box-shadow: var(--shadow-sm);
+	}
+
+	.skills {
+		display: flex;
+		flex-direction: column;
+		gap: 3rem;
+	}
+
+	.skills h2 {
+		font-size: var(--text-lg);
+	}
+
+	.skills p {
+		color: var(--gray-400);
+	}
+
+	@media (min-width: 50em) {
+		.box {
+			border-radius: 1.5rem;
+			padding: 2.5rem;
+		}
+
+		.skills {
+			display: grid;
+			grid-template-columns: repeat(3, 1fr);
+			gap: 5rem;
+		}
+
+		.skills h2 {
+			font-size: var(--text-2xl);
+		}
+	}
+</style>

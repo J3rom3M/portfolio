@@ -1,0 +1,155 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+
+import ContactCTA from '../components/ContactCTA.astro';
+import Hero from '../components/Hero.astro';
+---
+
+<BaseLayout title="A propos | Jérôme Magnier" description="A propos - Jérôme Magnier développeur web fullstack">
+	<div class="stack gap-20">
+		<main class="wrapper about">
+			<Hero
+				title="A propos"
+				tagline="Afin d'en savoir plus sur moi-même et mon parcours. Vous trouverez ci-dessous quelques points importants."
+			>
+				<img
+					width="1553"
+					height="873"
+					src="/assets/at-work.jpg"
+					alt="Jérôme Magnier"
+				/>
+			</Hero>
+
+			<section>
+				<h2 class="section-title">Contexte</h2>
+				<div class="content">
+					<p>
+						Ayant toujours travaillé dans le secteur de l'informatique.
+					</p>
+					<p>
+						J'ai eu l'occasion de travailler pour des administrations telles que le Conseil général du Var (à Toulon). Une mairie annexe de la ville de Toulon.
+						Egalement le centre des impôts du Var.
+					</p>
+					<p>
+						J'ai pu exercer sur des postes de hotliner technique de niveau 1 à N (généralement niveau max 3). Mais également des postes de helpdesk.
+						En service informatique (SI) en intervention sur les parties Hardware mais également sur la partie Software ou des spécifictions plus particulières comme administrateurs de base bases de données et gestion des serveurs dédiés.
+					</p>
+					<p>
+						J'ai ensuite travaillé un temps sur ces postes techniques pour des sociétés éditrices en sécurité informatique (Panda antivirus, Bitdefender Antivirus, ...).
+						J'ai également fait un court temps un passage en infographie. J'ai occupé un poste en avant-vente technique. J'ai aussi fait de la formation sur des produits réseaux grands comptes.
+					</p>
+					<p>
+						Le reste de ma carrière à été de la QA (ou testeur manuel) sur différents logiciels. J'ai également fait QA Automation (automatisation de tests) via du des applications que j'ai créé (automate de tests) en C# ou via un logiciel permettant d'automatiser des taches puis également via des séquences de script en C#.
+					</p>
+					<p>
+						Enfin j'ai suivi plusieurs formations diplômantes et certifications afin d'approfondir la programmation web puis la programmation (mobile, desktop et web) et ensuite également la gestion de projet.
+					</p>
+					<p>
+						Aujourd'hui j'aspire a devenir développeur qu'il s'agisse d'un poste de développeur web sur des technos telles que PHP et Javascript/Typescript (Symfony/Angular/React), ou développeur de solution desktop (clients lourds) en C# ou éventuellement de la conception d'applications mobile en Java. Et avec le temps continuer ma montée en compétences sur de la gestion de projet pour ma fin de carrière.
+					</p>
+				</div>
+			</section>
+			<section>
+				<h2 class="section-title">Formations/Certifications</h2>
+				<div class="content">
+					<p>Bachelor Concepteur développeur d'applications (BAC+3) - Webitech Paris.</p>
+					<p>Développeur Web et Web Mobile (BAC+2) - O'Clock.</p>
+					<p>BTS Informatique de gestion - option : Développeur d'applications (BAC+2) - CCI du Var - Toulon.</p>
+					<p>BAC Technologique - Génie Electronique (BAC) - Lycée Langevin - Var.</p>
+					<p> - </p>
+					<p>Certification : Maîtrise de la qualité en projet Web - Opquast - Niveau Confirmé.</p>
+				</div>
+			</section>
+			<section>
+				<h2 class="section-title">Compétences</h2>
+				<div class="content">
+					<p>PHP 5 à 8</p>
+					<p>Javascript</p>
+					<p>Typescript</p>
+					<p>.NET 2.5 à 4.8</p>
+					<p>Java</p>
+					<p>CSS</p>
+					<p>Bootstrap 4 et 5</p>
+					<p>Symfony 2.8 à 6</p>
+					<p>Laravel</p>
+					<p>Lumen</p>
+					<p>Vuejs 2</p>
+					<p>Angular</p>
+					<p>EXT JS 4.4.2</p>
+					<p>Docker</p>
+					<p>Visual Studio</p>
+					<p>Visual Studio Code</p>
+					<p>PHPStorm</p>
+					<p>Eclise</p>
+					<p>NativeScript</p>
+					<p>SpringBoot</p>
+					<p>MySQL - MariaDB - PostgreSQL</p>
+					<p>Windows, Linux, Mac OS, Android, IOS</p>
+					<p>Connaissances en SI, réseaux LDAP</p>
+					<p>Planification et gestion de projet</p>
+					<p>ORM Propel & Doctrine</p>
+				</div>
+			</section>
+		</main>
+
+		<ContactCTA />
+	</div>
+</BaseLayout>
+
+<style>
+	.about {
+		display: flex;
+		flex-direction: column;
+		gap: 3.5rem;
+	}
+
+	img {
+		margin-top: 1.5rem;
+		border-radius: 1.5rem;
+		box-shadow: var(--shadow-md);
+	}
+
+	section {
+		display: flex;
+		flex-direction: column;
+		gap: 0.5rem;
+		color: var(--gray-200);
+	}
+
+	.section-title {
+		grid-column-start: 1;
+		font-size: var(--text-xl);
+		color: var(--gray-0);
+	}
+
+	.content {
+		grid-column: 2 / 4;
+	}
+
+	.content :global(a) {
+		text-decoration: 1px solid underline transparent;
+		text-underline-offset: 0.25em;
+		transition: text-decoration-color var(--theme-transition);
+	}
+
+	.content :global(a:hover),
+	.content :global(a:focus) {
+		text-decoration-color: currentColor;
+	}
+
+	@media (min-width: 50em) {
+		.about {
+			display: grid;
+			grid-template-columns: 1fr 60% 1fr;
+		}
+
+		.about > :global(:first-child) {
+			grid-column-start: 2;
+		}
+
+		section {
+			display: contents;
+			font-size: var(--text-lg);
+		}
+	}
+</style>
