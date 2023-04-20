@@ -1,6 +1,6 @@
 ---
 title: I.H.M.D
-publishDate: 2020-03-02 00:00:00
+publishDate: 2022-10-24 00:00:00
 img: /assets/IHMD.png
 img_alt: The Internet Horror Movies Databases
 description: |

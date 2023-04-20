@@ -1,13 +1,13 @@
 ---
-title: Duvet Genius
-publishDate: 2020-03-04 00:00:00
-img: /assets/stock-3.jpg
-img_alt: Pearls of silky soft white cotton, bubble up under vibrant lighting
+title: Eco Opération
+publishDate: 2020-03-02 00:00:00
+img: /assets/ecooperation.png
+img_alt: One page web site for the entreprise EcoOperation
 description: |
-  We developed a virtual showcase for the softest bedding imaginable.
+  Lead dev back, gestion de projet, devops d'un blog éco responsable et éco participatif présenté comme responsive et one page.
 tags:
-  - Design
-  - Dev
+  - Devops
+  - Lead dev
   - Backend
   - User Testing
 ---
