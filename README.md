@@ -15,4 +15,8 @@ All commands are run from the root of the project, from a terminal:
 
 ## online portofio =>
 
+Ancienne URL :
 https://jeromemagnierdev.000webhostapp.com/
+
+Nouvelle URL :
+https://jerome.magnier.go.zd.fr/
